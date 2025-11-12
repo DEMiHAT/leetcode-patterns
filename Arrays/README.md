@@ -1,6 +1,4 @@
 
-
-````markdown
 # ⚡ Arrays: Contiguous Memory & Iterative Logic
 
 > **System Level:** Direct memory access, cache locality optimization, and pointer arithmetic.
@@ -99,3 +97,4 @@ def flexible_window_pattern(nums):
 
 ```
 ```
+
