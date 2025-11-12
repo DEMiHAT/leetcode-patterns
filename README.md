@@ -119,10 +119,7 @@ All implementations include explicit analytical documentation within the source 
 
 *Live data synchronized via LeetCode API.*
 
-\<div align="left"\>
-\<img src="https://www.google.com/search?q=https://leetcode-stats-six.vercel.app/api%3Fusername%3DYOUR\_LEETCODE\_USERNAME%26theme%3Ddark%26hide\_border%3Dtrue%26font%3DSegoe%2520UI%26hide\_title%3Dtrue" alt="LeetCode Stats" height="150" /\>
-\</div\>
-
+[![sanjeev_here's LeetCode Stats](https://leetcode-stats.vercel.app/api?username=sanjeev_here&theme=Dark)](https://github.com/JeremyTsaii/leetcode-stats)
 -----
 
 ## 📎 Version Control Protocol
@@ -142,5 +139,6 @@ This repository is released under the **MIT License**.
 
 ```
 ```
+
 
 
