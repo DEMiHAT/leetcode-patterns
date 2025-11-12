@@ -1,133 +1,147 @@
 
----
 
-```markdown
-# 🧠 LeetCode Patterns
+````markdown
+# Algorithmic Design Patterns & Computational Logic
 
-A structured and methodical repository designed to consolidate **algorithmic design patterns** and **computational problem-solving frameworks**.  
-This repository represents a systematic approach to **pattern-based learning**, emphasizing scalability, optimization, and reusability in code logic.
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
+![Language](https://img.shields.io/badge/language-Java%20%7C%20Python-007396?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
+![Maintenance](https://img.shields.io/badge/maintenance-active-blue?style=flat-square)
 
----
-
-## 📘 Overview
-
-The repository is organized around core **algorithmic domains** — Arrays, Graphs, Dynamic Programming, Backtracking, and more.  
-Each topic is further divided into difficulty tiers: **Easy**, **Medium**, and **Hard**, reflecting progressive depth in problem-solving and abstraction handling.
-
-The objective is not mere repetition of problems, but the development of a **framework-oriented approach** to algorithmic reasoning — identifying recurring structures and transforming intuition into deterministic patterns.
+> **A structured repository consolidating algorithmic design patterns, computational problem-solving frameworks, and performance optimization techniques.**
 
 ---
 
-## 🧩 Architecture
+## 📘 Abstract
 
-```
+This repository serves as a systematic archive of **algorithmic patterns**, emphasizing scalability, memory optimization, and reusable logic. Unlike standard solution dumps, this project focuses on the **framework-oriented approach** to reasoning—identifying recurring computational structures and transforming intuition into deterministic, production-ready code.
 
+The objective is to bridge the gap between theoretical computer science concepts and practical software engineering constraints.
+
+---
+
+## ⚙️ Engineering Methodology
+
+Every solution in this repository adheres to a strict engineering standard, analyzed through the following lens:
+
+* **Pattern Recognition:** Detecting recurring computational motifs (e.g., *Sliding Window*, *Monotonic Stacks*, *Fast & Slow Pointers*).
+* **Abstraction Design:** Generalizing solutions into reusable functional modules rather than ad-hoc scripts.
+* **Asymptotic Profiling:** Rigorous evaluation of $T(n)$ (Time) and $S(n)$ (Space) complexity.
+* **Memory Management:** Prioritizing in-place operations to minimize auxiliary space overhead.
+
+---
+
+## 📂 Repository Taxonomy
+
+The directory structure is organized by **algorithmic domain**, with each domain further stratified by difficulty tier (`Easy`, `Medium`, `Hard`) to track progressive complexity.
+
+```text
 leetcode-patterns/
 │
-├── Arrays/
+├── Arrays/                 # Sliding Window, Two Pointers, Prefix Sums
 │   ├── Easy/
 │   ├── Medium/
 │   └── Hard/
 │
-├── Strings/
-│   ├── Easy/
-│   ├── Medium/
-│   └── Hard/
+├── Backtracking/           # Permutations, Combinations, N-Queens
+│   ├── [Tiered Subfolders]
 │
-├── LinkedList/
-├── Stack_Queue/
-├── Trees/
-├── Graphs/
-├── Dynamic_Programming/
-├── Binary_Search/
-├── Backtracking/
-├── Bit_Manipulation/
-├── Math/
-└── Recursion/
+├── Binary_Search/          # Search Space Reduction, Rotated Arrays
+│   ├── [Tiered Subfolders]
+│
+├── Bit_Manipulation/       # XOR Logic, Masking, Bitwise Operations
+│   ├── [Tiered Subfolders]
+│
+├── Dynamic_Programming/    # Memoization, Tabulation, Knapsack Patterns
+│   ├── [Tiered Subfolders]
+│
+├── Graphs/                 # BFS, DFS, Union-Find, Topological Sort
+│   ├── [Tiered Subfolders]
+│
+├── LinkedList/             # Pointer Manipulation, Cycle Detection, Merging
+│   ├── [Tiered Subfolders]
+│
+├── Math/                   # Number Theory, Geometry, Combinatorics
+│   ├── [Tiered Subfolders]
+│
+├── Recursion/              # Base Cases, Recursive Trees
+│   ├── [Tiered Subfolders]
+│
+├── Stack_Queue/            # Monotonic Stacks, Priority Queues, Buffer Management
+│   ├── [Tiered Subfolders]
+│
+├── Strings/                # Parsing, Tries, String Matching Algorithms
+│   ├── [Tiered Subfolders]
+│
+└── Trees/                  # Binary Search Trees, Traversals, Serialization
+    ├── Easy/
+    ├── Medium/
+    └── Hard/
+````
 
+-----
+
+## 🧮 Complexity Analysis Standards
+
+All implementations include explicit analytical documentation within the source code comments:
+
+| Metric | Notation | Definition |
+| :--- | :--- | :--- |
+| **Time Complexity** | $O(f(n))$ | Upper bound on execution time relative to input size $n$. |
+| **Space Complexity** | $O(g(n))$ | Auxiliary memory required (excluding output storage). |
+
+**Example Annotation:**
+
+```java
+/**
+ * Approach: Floyd's Tortoise and Hare
+ * Time Complexity: O(n) - Linear traversal.
+ * Space Complexity: O(1) - Constant space, no external hash set used.
+ */
 ```
 
-Each subdirectory contains a dedicated `README.md` documenting:
-- **Problem classification**
-- **Pattern identification**
-- **Algorithmic trade-offs**
-- **Time–Space complexity analysis**
-- **Language-specific implementation notes**
+-----
 
----
+## ⚡ Selected Optimizations (Case Studies)
 
-## ⚙️ Methodology
+*Highlights of algorithmic refactoring and efficiency improvements.*
 
-Each problem is analyzed through a consistent lens of:
-- **Pattern Recognition** – detecting recurring computational motifs (e.g., sliding window, DFS/BFS traversal, state compression).  
-- **Abstraction Design** – generalizing solutions into reusable functional modules or algorithmic schemas.  
-- **Complexity Profiling** – evaluating asymptotic behavior and optimization ceilings.  
-- **Language-Agnostic Logic** – focusing on algorithmic integrity before syntactic implementation.
+### 1\. Graph Traversal & State Management
 
----
+  * **Problem:** *Number of Islands* (Grid DFS/BFS)
+  * **Optimization:** Refactored from an external `visited` Set ($O(m \times n)$ space) to in-place modification of the grid, reducing auxiliary space complexity to $O(1)$ (excluding stack frames).
 
-## 🧮 Complexity Standards
+### 2\. Dynamic Programming
 
-All solutions follow explicit analytical documentation:
-- **Time Complexity:** Defined using Big-O notation with justification.  
-- **Space Complexity:** Evaluated for auxiliary data structures and recursion depth.  
-- **Optimization Commentary:** Insights into potential algorithmic improvements or alternative approaches.
+  * **Problem:** *Climbing Stairs / House Robber*
+  * **Optimization:** Optimized from a standard integer array (`dp[]`) to two variables, reducing Space Complexity from $O(n)$ to $O(1)$.
 
----
+-----
 
-## 💻 Language Implementation Strategy
+## 📊 Performance Metrics
 
-Primary implementation: **Python 3.x**  
-Secondary implementations (progressive integration): **C++**, **C**, and **Rust**
+*Live data synchronized via LeetCode API.*
 
-Each language version will maintain consistency in:
-- Naming conventions  
-- Input/Output schema  
-- Documentation metadata  
+\<div align="left"\>
+\<img src="https://www.google.com/search?q=https://leetcode-stats-six.vercel.app/api%3Fusername%3DYOUR\_LEETCODE\_USERNAME%26theme%3Ddark%26hide\_border%3Dtrue%26font%3DSegoe%2520UI%26hide\_title%3Dtrue" alt="LeetCode Stats" height="150" /\>
+\</div\>
 
----
-
-## 🔍 Intended Outcomes
-
-- Develop **algorithmic intuition** through structural decomposition.  
-- Build a **library of reusable templates** for real-world technical interviews and production-level optimization tasks.  
-- Enhance cognitive transition from **problem-space** to **solution-space modeling**.  
-- Establish a **traceable evolution** of algorithmic mastery via version control.
-
----
-
-## 🧠 Future Extensions
-
-- Automated metadata generation for each problem (`pattern.json`)  
-- Complexity visualization graphs using Mermaid syntax  
-- Integration with LeetCode API for live stats and sync  
-- CLI tool for local search and retrieval of patterns  
-
----
+-----
 
 ## 📎 Version Control Protocol
 
-Each commit adheres to the following guidelines:
-- `add:` new pattern/problem inclusion  
-- `update:` refined approach or optimized complexity  
-- `doc:` documentation or analysis update  
-- `fix:` correction of logic or boundary condition  
+Commit messages follow the **Conventional Commits** specification to ensure a clean history:
 
-This ensures that the repository history reflects **intellectual progression** rather than simple file addition.
+  * `feat:` New pattern or problem inclusion.
+  * `perf:` Code refactoring for improved time/space complexity.
+  * `docs:` Updates to analysis, comments, or documentation.
+  * `fix:` Correction of edge cases or boundary logic.
 
----
+-----
 
 ## 🧾 License
 
-This repository is released under the **MIT License** — open for learning, adaptation, and contribution.
+This repository is released under the **MIT License**.
 
----
-
-### Maintained by  
-**Sanjeev Sriram**  
-_Algorithmic Systems and Optimization Enthusiast_  
-📍 Focus Areas: Computational Logic | Algorithmic Design | Systems Thinking
 ```
-
----
-
+```
