@@ -1,10 +1,7 @@
-
-
-
 # Algorithmic Design Patterns & Computational Logic
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
-![Language](https://img.shields.io/badge/language-Java%20%7C%20Python-007396?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
 ![Maintenance](https://img.shields.io/badge/maintenance-active-blue?style=flat-square)
 
@@ -145,4 +142,5 @@ This repository is released under the **MIT License**.
 
 ```
 ```
+
 
