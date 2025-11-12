@@ -1,6 +1,6 @@
 
 
-````markdown
+
 # Algorithmic Design Patterns & Computational Logic
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
@@ -145,3 +145,4 @@ This repository is released under the **MIT License**.
 
 ```
 ```
+
