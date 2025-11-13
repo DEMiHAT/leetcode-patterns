@@ -20,6 +20,10 @@ As we iterate through the array, for every number `num`, we calculate the `compl
     * Hash map lookups and insertions take $O(1)$ time on average.
 * **Space Complexity:** $O(n)$
     * In the worst-case scenario (where the pair is at the end or no pair exists), we store $n$ elements in the hash map.
+ 
+### **Problem Link**
+https://leetcode.com/problems/two-sum/description/
 
 ---
+
 
