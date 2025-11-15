@@ -119,7 +119,7 @@ All implementations include explicit analytical documentation within the source 
 
 *Live data synchronized via LeetCode API.*
 
-[![sanjeev_here's LeetCode Stats](https://leetcode-stats.vercel.app/api?username=sanjeev_here&theme=Dark)](https://github.com/JeremyTsaii/leetcode-stats)
+https://leetcard.jacoblin.cool/sanjeev_here?theme=dark&font=Noto%20Sans%20Lepcha&ext=activity
 -----
 
 ## 📎 Version Control Protocol
@@ -139,6 +139,7 @@ This repository is released under the **MIT License**.
 
 ```
 ```
+
 
 
 
